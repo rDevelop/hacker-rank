@@ -1,8 +1,5 @@
 package practice.algorithms.strings;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -52,8 +49,8 @@ public class BearAndSteadyGene {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("gene.txt"))) {
+    public static void main(String[] args) {
+        //try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("gene.txt"))) {
             //int n = scanner.nextInt();
             //scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -61,11 +58,12 @@ public class BearAndSteadyGene {
 
             //int result = steadyGene(gene);
             int result = steadyGene("GAAATAAA");
+        System.out.println(result);
 
-            bufferedWriter.write(String.valueOf(result));
-            bufferedWriter.newLine();
-        }
+        //bufferedWriter.write(String.valueOf(result));
+        //bufferedWriter.newLine();
+        //}
 
-        scanner.close();
+        //scanner.close();
     }
 }
