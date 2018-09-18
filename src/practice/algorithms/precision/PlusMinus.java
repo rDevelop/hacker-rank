@@ -19,7 +19,6 @@ public class PlusMinus {
                 zero++;
             }
         }
-        double val = (double) pos / arr.length;
         System.out.printf("%.6f%n", ((double) pos / arr.length));
         System.out.printf("%.6g%n", ((double) neg / arr.length));
         System.out.printf("%.6g%n", ((double) zero / arr.length));
