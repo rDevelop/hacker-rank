@@ -23,13 +23,13 @@ public class MinMaxSum {
         Long max = Arrays.stream(arr).asLongStream()
                 .sorted()
                 .skip(1)
-                .reduce(0, (a, b ) -> a + b );
+                .sum();
 
         // stream to long, sort, add all numbers up to 4th number
         Long min = Arrays.stream(arr).asLongStream()
                 .sorted()
                 .limit(4)
-                .reduce(0, (a, b ) -> a + b );
+                .sum();
 
         System.out.println(min + " " + max);
     }
